@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Dev | Editor de Código</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/Logo.svg" alt="Logo da Alura dev" class="cabecalho__logo">
+        <input type="text" placeholder="Busque por algo" class="entrada cabecalho__busca">
+        <div class="perfil">
+            <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
+            <p class="perfil__nome">Harry</p>
+        </div>
+    </header>
+    <main class="pagina__editor">
+        <nav class="menu">
+            <p class="titulo__sidebar">Menu</p>
+            <a href="#" class="menu__item menu__item--ativo"><i class="fas fa-code"></i>Editor de Código</a>
+            <a href="#" class="menu__item"><i class="fas fa-users"></i>Comunidade</a>
+        </nav>
+        <section class="editor">
+            <textarea name="" id="" cols="30" rows="10" class="editor__campo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+    return go(f, seed, [])
+}</textarea>
+            <button class="editor__botao">Visualizar com o hightlight</button>
+        </section>
+        <fieldset class="informacoes-projeto">
+            <p class="titulo__sidebar">Seu projeto</p>
+            <input type="text" placeholder="Nome do seu projeto" class="entrada">
+            <textarea placeholder="Descrição do seu projeto" class="entrada"></textarea>
+            <p class="titulo__sidebar">Personalização</p>
+            <input list="linguagens" class="entrada">
+            <datalist id="linguagens">
+               <option value="JavaScript">
+               <option value="HTML">
+               <option value="CSS">
+            </datalist>
+            <input type="color" class="muda_cor"></input>
+            <button class="botao">Salvar projeto</button>
+
+
+        </fieldset>
+
+    </main>
+    
+</body>
+</html>
