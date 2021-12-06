@@ -101,6 +101,10 @@ body {
 .editor__campo {
     border-radius: 8px;
     background: #141414;
+    background-image: url(../img/bolinhas.png);
+    background-repeat: no-repeat;
+    background-position: 1rem 1rem;
+    background-size: 40px;
     font-family: 'roboto mono';
     font-size: 0.7rem;
     line-height: 1rem;
@@ -135,16 +139,14 @@ body {
     margin: 1rem 0 2rem;
 }
 
-.muda_cor {
-    background: #6BD1FF;
+.color-picker {
     border: 1px solid #FFFFFF;
-    padding: 1rem;
+    background: #051D3B;
     width: 100%;
-    height: 2rem;
+    height: 56px;
     border-radius: 8px;
+    padding: 8px;
     margin-top: 1rem;
-    transition: 0.2s;
-    text-decoration: none;
 }
 
 .botao {
