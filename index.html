@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Dev | Editor de Código</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
     <header class="cabecalho">
         <img src="img/Logo.svg" alt="Logo da Alura dev" class="cabecalho__logo">
-        <input type="text" placeholder="Busque por algo" class="entrada cabecalho__busca">
-        <div class="perfil">
+        <input type="text" placeholder="Busque por algo" class="entrada entrada--busca ">
+        <button class="busca-mobile"><i>B</i></button>
+        <button class="perfil">
             <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
             <p class="perfil__nome">Harry</p>
-        </div>
+        </button>
+        <button class="perfil-mobile"><i>MN</i></button>
     </header>
-    <main class="pagina__editor">
+    <main>
         <nav class="menu">
-            <p class="titulo__sidebar">Menu</p>
+            <p class="titulo-sidebar">Menu</p>
             <a href="#" class="menu__item menu__item--ativo"><i class="fas fa-code"></i>Editor de Código</a>
             <a href="#" class="menu__item"><i class="fas fa-users"></i>Comunidade</a>
         </nav>
@@ -39,26 +42,23 @@ const unfold = (f, seed) => {
     }
     return go(f, seed, [])
 }</textarea>
-            <button class="editor__botao">Visualizar com o hightlight</button>
+            <button class="editor__botao botao">Visualizar com o hightlight</button>
         </section>
-        <fieldset class="informacoes-projeto">
-            <p class="titulo__sidebar">Seu projeto</p>
+        <fieldset class="projeto">
+            <p class="titulo-sidebar">Seu projeto</p>
             <input type="text" placeholder="Nome do seu projeto" class="entrada">
             <textarea placeholder="Descrição do seu projeto" class="entrada"></textarea>
-            <p class="titulo__sidebar">Personalização</p>
-            <input list="linguagens" class="entrada">
-            <datalist id="linguagens">
-               <option value="JavaScript">
-               <option value="HTML">
-               <option value="CSS">
-            </datalist>
-            <input type="color" class="color-picker" value="#6BD1FF"></input>
-            <button class="botao">Salvar projeto</button>
-
-
+            <p class="titulo-sidebar titulo-espacamento">Personalização</p>
+            <div class="personalizacao">
+              <select class="entrada">
+                 <option value="JavaScript">JavaScript</option>
+                 <option value="HTML">HTML</option>
+                 <option value="CSS">CSS</option>
+              </select>
+              <input type="color" class="color-picker" value="#6BD1FF">
+             </div>
+            <button class="projeto__botao botao">Salvar projeto</button>
         </fieldset>
-
     </main>
-    
 </body>
 </html>

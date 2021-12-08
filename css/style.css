@@ -1,142 +1,77 @@
-body {
-    background-color: #051D3B;
-    font-family: 'inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.5rem;
-    color: #FFFFFF;
-    padding: 2rem;
-}
-
-/* Cabeçalho */
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cabecalho__logo {
-    width: 12%;
-    min-width: 100px;
-}
-
-.entrada {
-    background: #FFFFFF29;
-    padding: 1rem;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-}
-
-.entrada:hover {
-    background: #FFFFFF3D;
-}
-
-.cabecalho__busca {
-    width: 56%;
-}
-
-.perfil {
-    display: flex;
-    align-items: center;
-}
-
-.perfil__imagem {
-    width: 32px;
-}
-
-.perfil__nome {
-   margin-left: 8px;
-}
-
-/* Principal */
-
-.pagina__editor {
+main {
     display: grid;
-    grid-template-columns: 0.5fr 1.2fr 0.3fr;
-    margin-top: 32px;
-    grid-template-areas: 
-        "menu editor informacoes-projeto"
-    ;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
-/* Menu */
-.menu {
+@media screen and (max-width: 1023px) {
+  main {
     display: flex;
     flex-direction: column;
-}
-
-.titulo__sidebar {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-.menu__item {
-    opacity: 56%; 
-    margin-bottom: 1rem; 
-}
-
-.menu__item i{
-    padding: 16px 14px;
-    margin-right: 1rem;
-    border-radius: 16px;
-    background: #5081FB29;
-    transition: 0.2s;
-}
-
-.menu__item i:hover{
-    background: #5081FBA3;
-}
-
-.menu__item--ativo {
-    opacity: 100%;
-}
-
-.menu__item--ativo i{
-    background: #5081FB;
+  }
 }
 
 .editor__campo {
-    border-radius: 8px;
     background: #141414;
     background-image: url(../img/bolinhas.png);
     background-repeat: no-repeat;
     background-position: 1rem 1rem;
     background-size: 40px;
-    font-family: 'roboto mono';
-    font-size: 0.7rem;
-    line-height: 1rem;
     width: 95%;
     height: 366px;
+    border-radius: 8px;
+    font-family: var(--fonte-card);
+    line-height: 1rem;
     padding: 3rem 1rem 1rem;
-    outline: none;
-    border: 24px solid #6BD1FF;
     box-sizing: border-box;
+    border: 32px solid #6BD1FF;
+    outline: none;    
+}
+
+@media screen and (max-width: 767px){
+  .editor__campo{
+    height:492px;
+  }
+}
+
+.botao {
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 2rem 0;  
 }
 
 .editor__botao {
-    background: #5081FB14;
+    background: var(--botao-out);
+    margin-bottom: 2.5rem;
     width: 95%;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-top: 1rem;
-    transition: 0.2s;
 }
 
 .editor__botao:hover {
-    background: #5081FB29;
+    background: var(--botao-out-hover);
 }
 
-.informacoes-projeto {
-    display: flex;
-    flex-direction: column;
+.editor__botao:active {
+    border: 4px solid #5081FB3D;
+}
+
+.editor__botao:focus {
+    background: var(--botao-out-focus);
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-espacamento{
+    margin-top: 2rem;  
+}
+
+.personalizacao select {
     width: 100%;
 }
 
-.informacoes-projeto textarea {
-    margin: 1rem 0 2rem;
+option {
+    background: var(--background);
 }
 
 .color-picker {
@@ -146,20 +81,54 @@ body {
     height: 56px;
     border-radius: 8px;
     padding: 8px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
-.botao {
-    background: #5081FB;
-     width: 100%;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-top: 2rem;
-    transition: 0.2s;
+@media screen and (max-width: 1023px){
+  .personalizacao{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .personalizacao select {
+    width: 48%;
+  }
+  
+  .color-picker {
+    width: 48%;
+  }
 }
 
-.botao:hover {
-    background: #7BA4FC;
-    ;
+@media screen and (max-width: 767px){
+  .personalizacao{
+    display: inline-block;
+  }
+    .personalizacao select {
+    width: 100%;
+  }
+  
+  .color-picker {
+    width: 100%;
+  }
 }
+
+.projeto__botao {
+    background: var(--botao);
+    color: #051D3B;
+    width: 100%
+}
+
+.projeto__botao:hover {
+    background: var(--botao-hover);
+}
+
+.projeto__botao:focus {
+    background: var(--botao-focus);
+}
+
+.projeto__botao:active {
+    border: 4px solid #5081FBB8;
+}
+
 
