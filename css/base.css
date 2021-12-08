@@ -31,41 +31,60 @@ body {
     font-family: 'inter', sans-serif;
     line-height: 1.5rem;
     color: #FFFFFF;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 2.5fr 1.1fr;
     align-items: center;
     margin-bottom: 32px;
 }
 
+@media screen and (max-width: 1023px) {
+  .cabecalho {  
+    gap: 40px;
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
 .cabecalho__logo {
-    width: 12%;
-    min-width: 100px;
+    width: 145px;
 }
 
 .entrada {
     background: var(--input);
     padding: 1rem 0.9rem;
     margin: 0.5rem 0;
-    width: 95%;
+    width: 100%;
+    box-sizing: border-box;
     border-radius: 8px;
     border: none;
     outline: none;
     transition: 0.2s;
+    resize: none;
 }
-
-.entrada--busca {
-    width: 56%;
- }
 
 .entrada:hover {
     background: var(--input-hover);
 }
 
+.perfil {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: 0.2s;
+    margin-left: 9%;
+}
+
 .busca-mobile {
+  display: none;
+}
+
+.menu-mobile {
   display: none;
 }
 
@@ -75,34 +94,28 @@ body {
   }
   
   .busca-mobile {
-    display: inline-block;
+    display: inline;
+    justify-self: flex-end;
+  }
+
+  .busca-mobile i {
+    font-size: 1.3rem;
   }
 }
 
-.perfil {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    border-radius: 8px;
-    transition: 0.2s;
-    margin-left: 9%;
-}
-
-.perfil-mobile {
-  display: none;
-}
-
 @media screen and (max-width: 1023px) {
-  .busca-mobile {
-  display: none;
-}
-  
+ 
   .perfil {
     display:none;
   }
   
-  .perfil-mobile {
-    display:inline-block;  
+  .menu-mobile {
+    justify-self: flex-end;
+    display:inline;  
+  }
+
+  .menu-mobile i {
+    font-size: 1.3rem;
   }
 }
 
@@ -140,12 +153,12 @@ body {
 
 .menu__item {
     opacity: 56%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .menu__item i{
     padding: 1rem 0.8rem;
-    margin-right: 1rem;
+    margin-right: 0.9rem;
     border-radius: 16px;
     background: var(--item-menu);
     transition: 0.2s;
