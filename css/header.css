@@ -1,0 +1,119 @@
+.cabecalho {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2.5fr 1.1fr;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.cabecalho__logo {
+    width: 145px;
+}
+
+.perfil {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: 0.2s;
+    margin-left: 9%;
+    cursor: pointer;
+}
+
+.perfil:hover {
+    background: var(--perfil-hover);
+}
+
+.perfil__imagem {
+    width: 32px;
+}
+
+.perfil__nome {
+   margin-left: 8px;
+}
+
+.botao-busca-mobile {
+    display: none;
+}
+  
+.botao-menu-mobile {
+    display: none;
+}
+
+.botao-fechar {
+    display: none;
+}
+
+  /*Tablet e celular*/
+@media screen and (max-width: 1023px) {
+    
+    .cabecalho {  
+        grid-template-columns: auto 1fr auto;
+    }
+   
+    .perfil {
+      display:none;
+    }
+    
+    .botao-menu-mobile, .botao-fechar-mobile--mostrar {
+      justify-self: flex-end;
+      display:inline; 
+      cursor: pointer; 
+    }
+
+    .botao-menu-mobile--esconder {
+    display: none;
+    }
+  
+    .botao-menu-mobile i, .botao-fechar-mobile--mostrar i {
+      font-size: 1.3rem;
+      padding: 1rem 0.8rem;
+      border-radius: 16px;
+      transition: 0.2s;
+    }
+
+    .botao-menu-mobile i:hover, .botao-fechar-mobile--mostrar i:hover {
+        background: #5081FB14;
+    }
+
+    .botao-menu-mobile i:active, .botao-fechar-mobile--mostrar i:active {
+        background: #5081FB29;
+    }
+}
+
+@media screen and (max-width:767px){
+    
+    .cabecalho--mobile {
+        grid-column: span 2;
+        justify-self: end;
+    }
+    
+    .entrada--busca {
+      display:none;
+    }
+    
+    .botao-busca-mobile {
+      display: inline;
+      justify-self: flex-end;
+      cursor: pointer;
+    }
+  
+    .botao-busca-mobile i {
+        font-size: 1.3rem;
+        padding: 1rem 0.8rem;
+        border-radius: 16px;
+        transition: 0.2s;
+    }
+
+    .botao-busca-mobile i:hover {
+        background: #5081FB14;
+    }
+
+    .botao-busca-mobile i:active {
+        background: #5081FB29;
+    }
+}
+  
+
+

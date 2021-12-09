@@ -1,0 +1,81 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.titulo-sidebar {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.menu__item {
+    opacity: 56%;
+    margin-bottom: 1rem;
+}
+
+.menu__item i{
+    padding: 1rem 0.8rem;
+    margin-right: 0.9rem;
+    border-radius: 16px;
+    background: var(--item-menu);
+    transition: 0.2s;
+}
+
+.menu__item:hover {
+  opacity: 72%
+}
+
+.menu__item i:hover{
+    background: var(--item-menu-hover);
+}
+
+.menu__item--ativo {
+    opacity: 100%;
+}
+
+.menu__item--ativo i{
+    background: var(--item-menu-pressed);
+}
+
+/* Tablet e celular */
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    position:absolute;
+    right: 200vw;   
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 254px;
+    box-sizing: border-box;
+    background-color: #2D415B;
+    padding: 2rem;
+  }
+
+  .menu-mobile--ativo {
+    left: calc(100vw - 254px)
+  }
+
+  .botao-menu-mobile--ativo {
+    display: none;
+  }
+
+  .perfil-mobile {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 8%);
+    transition: 0.2s;
+  } 
+}

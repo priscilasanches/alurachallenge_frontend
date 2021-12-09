@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -21,44 +23,56 @@
             <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
             <p class="perfil__nome">Harry</p>
         </button>
-        <button class="busca-mobile"><i class="fas fa-search"></i></button>
-        <button class="menu-mobile"><i class="fas fa-bars"></i></button>
+        <div class="cabecalho--mobile">
+            <button class="botao-busca-mobile" data-busca-mobile><i class="fas fa-search"></i></button>
+            <button class="botao-menu-mobile" data-botao-menu-mobile><i class="fas fa-bars"></i></button>
+            <button class="botao-fechar" data-botao-fechar><i class="fas fa-times"></i></button>
+        </div>
     </header>
     <main>
         <nav class="menu">
             <p class="titulo-sidebar">Menu</p>
-            <a href="#" class="menu__item menu__item--ativo"><i class="fas fa-code"></i>Editor de Código</a>
-            <a href="#" class="menu__item"><i class="fas fa-users"></i>Comunidade</a>
+            <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code"></i>Editor de Código</a>
+            <a href="comunidade.html" class="menu__item"><i class="fas fa-users"></i>Comunidade</a>
+        </nav>
+        <nav class="menu-mobile" data-menu-mobile>
+            <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code"></i>Editor de Código</a>
+            <a href="comunidade.html" class="menu__item"><i class="fas fa-users"></i>Comunidade</a>
+            <button class="perfil-mobile">
+                <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
+                <p class="perfil__nome">Harry</p>
+            </button>
         </nav>
         <section class="editor">
             <textarea name="" id="" cols="30" rows="10" class="editor__campo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
-
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}</textarea>
-            <button class="editor__botao botao">Visualizar com o hightlight</button>
-        </section>
-        <fieldset class="projeto">
-            <p class="titulo-sidebar">Seu projeto</p>
-            <input type="text" placeholder="Nome do seu projeto" class="entrada">
-            <textarea placeholder="Descrição do seu projeto" class="entrada"></textarea>
-            <p class="titulo-sidebar titulo-espacamento">Personalização</p>
-            <div class="personalizacao">
-              <select class="entrada">
-                 <option value="JavaScript">JavaScript</option>
-                 <option value="HTML">HTML</option>
-                 <option value="CSS">CSS</option>
-              </select>
-              <input type="color" class="color-picker" value="#6BD1FF">
-             </div>
-            <button class="projeto__botao botao">Salvar projeto</button>
-        </fieldset>
-    </main>
-</body>
-</html>
+                
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                
+                const unfold = (f, seed) => {
+                    const go = (f, seed, acc) => {
+                        const res = f(seed)
+                        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                    }
+                    return go(f, seed, [])
+                }</textarea>
+                <button class="editor__botao botao">Visualizar com o hightlight</button>
+            </section>
+            <form class="projeto">
+                <p class="titulo-sidebar">Seu projeto</p>
+                <input type="text" placeholder="Nome do seu projeto" class="entrada">
+                <textarea placeholder="Descrição do seu projeto" class="entrada"></textarea>
+                <p class="titulo-sidebar">Personalização</p>
+                <fieldset class="personalizacao">
+                    <select class="entrada">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                    </select>
+                    <input type="color" class="color-picker" value="#6BD1FF">
+                </fieldset>
+                <button class="projeto__botao botao">Salvar projeto</button>
+            </form>
+        </main>
+        <script src="index.js"></script>
+    </body>
+    </html>

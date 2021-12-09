@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura dev | Comunidade</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="img/Logo.svg" alt="Logo da Alura dev" class="cabecalho__logo">
+        <input type="text" placeholder="Busque por algo" class="entrada entrada--busca ">
+        <button class="perfil">
+            <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
+            <p class="perfil__nome">Harry</p>
+        </button>
+        <div class="cabecalho--mobile">
+            <button class="botao-busca-mobile" data-busca-mobile><i class="fas fa-search"></i></button>
+            <button class="botao-menu-mobile" data-botao-menu-mobile><i class="fas fa-bars"></i></button>
+            <button class="botao-fechar" data-botao-fechar><i class="fas fa-times"></i></button>
+        </div>
+    </header>
+    <main>
+        <nav class="menu">
+            <p class="titulo-sidebar">Menu</p>
+            <a href="index.html" class="menu__item"><i class="fas fa-code"></i>Editor de Código</a>
+            <a href="comunidade.html" class="menu__item menu__item--ativo"><i class="fas fa-users"></i>Comunidade</a>
+        </nav>
+        <nav class="menu-mobile" data-menu-mobile>
+            <a href="index.html" class="menu__item"><i class="fas fa-code"></i>Editor de Código</a>
+            <a href="comunidade.html" class="menu__item menu__item--ativo"><i class="fas fa-users"></i>Comunidade</a>
+            <button class="perfil-mobile">
+                <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
+                <p class="perfil__nome">Harry</p>
+            </button>
+        </nav>
+        
+        <script src="index.js"></script>
+    </body>
+    </html>

@@ -34,148 +34,26 @@ body {
     padding: 1.5rem 2rem;
 }
 
-.cabecalho {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: 1fr 2.5fr 1.1fr;
-    align-items: center;
-    margin-bottom: 32px;
-}
-
-@media screen and (max-width: 1023px) {
-  .cabecalho {  
-    gap: 40px;
-    grid-template-columns: auto 1fr auto;
-  }
-}
-
-.cabecalho__logo {
-    width: 145px;
-}
-
 .entrada {
-    background: var(--input);
-    padding: 1rem 0.9rem;
-    margin: 0.5rem 0;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-    resize: none;
+  background: var(--input);
+  padding: 1rem 0.9rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  resize: none;
 }
 
 .entrada:hover {
-    background: var(--input-hover);
+  background: var(--input-hover);
 }
 
-.perfil {
-    justify-self: flex-end;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    border-radius: 8px;
-    transition: 0.2s;
-    margin-left: 9%;
-}
-
-.busca-mobile {
-  display: none;
-}
-
-.menu-mobile {
-  display: none;
-}
-
-@media screen and (max-width:767px){
-  .entrada--busca {
-    display:none;
-  }
-  
-  .busca-mobile {
-    display: inline;
-    justify-self: flex-end;
-  }
-
-  .busca-mobile i {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 1023px) {
- 
-  .perfil {
-    display:none;
-  }
-  
-  .menu-mobile {
-    justify-self: flex-end;
-    display:inline;  
-  }
-
-  .menu-mobile i {
-    font-size: 1.3rem;
-  }
-}
-
-.perfil:hover {
-    background: var(--perfil-hover);
-}
-
-.perfil__imagem {
-    width: 32px;
-}
-
-.perfil__nome {
-   margin-left: 8px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 1023px) {
-  .menu {
-    position:absolute;
-    right: 200vw;
-  }
-}
-
-.titulo-sidebar {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.4em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-.menu__item {
-    opacity: 56%;
-    margin-bottom: 1rem;
-}
-
-.menu__item i{
-    padding: 1rem 0.8rem;
-    margin-right: 0.9rem;
-    border-radius: 16px;
-    background: var(--item-menu);
-    transition: 0.2s;
-}
-
-.menu__item:hover {
-  opacity: 72%
-}
-
-.menu__item i:hover{
-    background: var(--item-menu-hover);
-}
-
-.menu__item--ativo {
-    opacity: 100%;
-}
-
-.menu__item--ativo i{
-    background: var(--item-menu-pressed);
+.botao {
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem 0; 
+  cursor: pointer; 
 }
