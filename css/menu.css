@@ -3,9 +3,9 @@
     flex-direction: column;
 }
 
-.menu-mobile {
+/* .menu-mobile {
   display: none;
-}
+} */
 
 .titulo-sidebar {
     font-size: 0.8rem;
@@ -44,8 +44,11 @@
     background: var(--item-menu-pressed);
 }
 
-/* Tablet e celular */
+.perfil-mobile {
+  display: none;
+}
 
+/* Tablet e celular */
 @media screen and (max-width: 1023px) {
   .menu {
     display: none;
@@ -53,7 +56,7 @@
 
   .menu-mobile {
     position:absolute;
-    right: 200vw;   
+    left: calc(100vw - 254px);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -63,19 +66,13 @@
     padding: 2rem;
   }
 
-  .menu-mobile--ativo {
-    left: calc(100vw - 254px)
-  }
-
-  .menu-mobile a:nth-child(2) {
+  .menu-mobile :nth-child(3) {
     padding-bottom: 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 8%);
   }
 
   .perfil-mobile {
+    align-self: left;
     display: flex;
-    align-self: flex-start;
-    margin: 2.25rem 0;
-    transition: 0.2s;
-  } 
+  }  
 }

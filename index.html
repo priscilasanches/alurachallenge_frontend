@@ -18,8 +18,8 @@
 <body>
     <header class="cabecalho">
         <img src="img/Logo.svg" alt="Logo da Alura dev" class="cabecalho__logo">
-        <input type="text" placeholder="Busque por algo" class="entrada entrada--busca ">
-        <button class="perfil">
+        <input type="text" placeholder="Busque por algo" aria-label="Busque por algo" class="cabecalho__entrada entrada">
+        <button class="perfil perfil__estilizacao">
             <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
             <p class="perfil__nome">Harry</p>
         </button>
@@ -29,15 +29,11 @@
         </div>
     </header>
     <main>
-        <nav class="menu">
+        <nav class="menu"  data-menu-mobile>
             <p class="titulo-sidebar">Menu</p>
             <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code" aria-hidden="true"></i>Editor de Código</a>
             <a href="comunidade.html" class="menu__item"><i class="fas fa-users" aria-hidden="true"></i>Comunidade</a>
-        </nav>
-        <nav class="menu-mobile" data-menu-mobile>
-            <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code" aria-hidden="true"></i>Editor de Código</a>
-            <a href="comunidade.html" class="menu__item"><i class="fas fa-users" aria-hidden="true"></i>Comunidade</a>
-            <button class="perfil perfil-mobile">
+            <button class="perfil-mobile perfil__estilizacao">
                 <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
                 <p class="perfil__nome">Harry</p>
             </button>
@@ -60,8 +56,8 @@
             </section>
             <form class="projeto">
                 <p class="titulo-sidebar">Seu projeto</p>
-                <input type="text" placeholder="Nome do seu projeto" class="entrada">
-                <textarea placeholder="Descrição do seu projeto" class="entrada"></textarea>
+                <input type="text" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" class="entrada">
+                <textarea placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" class="entrada"></textarea>
                 <p class="titulo-sidebar">Personalização</p>
                 <fieldset class="personalizacao">
                     <select class="entrada">
@@ -69,9 +65,9 @@
                         <option value="HTML">HTML</option>
                         <option value="CSS">CSS</option>
                     </select>
-                    <input type="color" class="color-picker" value="#6BD1FF">
+                    <input type="color" aria-label="cor" class="color-picker" value="#6BD1FF">
                 </fieldset>
-                <input type = "submit" class="projeto__botao botao" value="Salvar projeto">
+                <input type = "submit" aria-label="Enviar" class="projeto__botao botao" value="Salvar projeto">
             </form>
         </main>
         <script src="index.js"></script>

@@ -10,19 +10,22 @@
     width: 145px;
 }
 
-.perfil {
-    justify-self: flex-end;
+.perfil__estilizacao {
     display: flex;
     align-items: center;
-    border-radius: 8px;
     padding: 0.75rem;
     transition: 0.2s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.perfil {
+    justify-self: flex-end;
     margin-left: 9%;  
 }
 
-.perfil:hover, .perfil-mobile:hover{
+.perfil:hover, .perfil-mobile:hover {
     background: var(--perfil-hover);
-    cursor: pointer;
 }
 
 .perfil__imagem {
@@ -81,7 +84,7 @@
         justify-self: end;
     }
     
-    .entrada--busca {
+    .cabecalho__entrada {
       display:none;
     }
     
