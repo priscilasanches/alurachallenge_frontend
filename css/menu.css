@@ -67,15 +67,15 @@
     left: calc(100vw - 254px)
   }
 
-  .botao-menu-mobile--ativo {
-    display: none;
+  .menu-mobile a:nth-child(2) {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 8%);
   }
 
   .perfil-mobile {
     display: flex;
-    align-items: center;
-    padding: 2.5rem 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 8%);
+    align-self: flex-start;
+    margin: 2.25rem 0;
     transition: 0.2s;
   } 
 }

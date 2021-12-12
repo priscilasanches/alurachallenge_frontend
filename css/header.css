@@ -14,15 +14,15 @@
     justify-self: flex-end;
     display: flex;
     align-items: center;
-    padding: 0.5rem;
     border-radius: 8px;
+    padding: 0.75rem;
     transition: 0.2s;
-    margin-left: 9%;
-    cursor: pointer;
+    margin-left: 9%;  
 }
 
-.perfil:hover {
+.perfil:hover, .perfil-mobile:hover{
     background: var(--perfil-hover);
+    cursor: pointer;
 }
 
 .perfil__imagem {
@@ -41,10 +41,6 @@
     display: none;
 }
 
-.botao-fechar {
-    display: none;
-}
-
   /*Tablet e celular*/
 @media screen and (max-width: 1023px) {
     
@@ -56,28 +52,24 @@
       display:none;
     }
     
-    .botao-menu-mobile, .botao-fechar-mobile--mostrar {
+    .botao-menu-mobile {
       justify-self: flex-end;
       display:inline; 
       cursor: pointer; 
     }
-
-    .botao-menu-mobile--esconder {
-    display: none;
-    }
   
-    .botao-menu-mobile i, .botao-fechar-mobile--mostrar i {
+    .botao-menu-mobile i{
       font-size: 1.3rem;
       padding: 1rem 0.8rem;
       border-radius: 16px;
       transition: 0.2s;
     }
 
-    .botao-menu-mobile i:hover, .botao-fechar-mobile--mostrar i:hover {
+    .botao-menu-mobile i:hover {
         background: #5081FB14;
     }
 
-    .botao-menu-mobile i:active, .botao-fechar-mobile--mostrar i:active {
+    .botao-menu-mobile i:active {
         background: #5081FB29;
     }
 }

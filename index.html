@@ -24,37 +24,38 @@
             <p class="perfil__nome">Harry</p>
         </button>
         <div class="cabecalho--mobile">
-            <button class="botao-busca-mobile" data-busca-mobile><i class="fas fa-search"></i></button>
-            <button class="botao-menu-mobile" data-botao-menu-mobile><i class="fas fa-bars"></i></button>
-            <button class="botao-fechar" data-botao-fechar><i class="fas fa-times"></i></button>
+            <button class="botao-busca-mobile"><i class="fas fa-search" aria-hidden="true" title="Botão de busca"></i></button>
+            <button class="botao-menu-mobile"><i class="fas fa-bars" aria-hidden="true" title="Botão do menu" data-botao-menu></i></button>
         </div>
     </header>
     <main>
         <nav class="menu">
             <p class="titulo-sidebar">Menu</p>
-            <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code"></i>Editor de Código</a>
-            <a href="comunidade.html" class="menu__item"><i class="fas fa-users"></i>Comunidade</a>
+            <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code" aria-hidden="true"></i>Editor de Código</a>
+            <a href="comunidade.html" class="menu__item"><i class="fas fa-users" aria-hidden="true"></i>Comunidade</a>
         </nav>
         <nav class="menu-mobile" data-menu-mobile>
-            <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code"></i>Editor de Código</a>
-            <a href="comunidade.html" class="menu__item"><i class="fas fa-users"></i>Comunidade</a>
-            <button class="perfil-mobile">
+            <a href="index.html" class="menu__item menu__item--ativo"><i class="fas fa-code" aria-hidden="true"></i>Editor de Código</a>
+            <a href="comunidade.html" class="menu__item"><i class="fas fa-users" aria-hidden="true"></i>Comunidade</a>
+            <button class="perfil perfil-mobile">
                 <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
                 <p class="perfil__nome">Harry</p>
             </button>
         </nav>
         <section class="editor">
-            <textarea name="" id="" cols="30" rows="10" class="editor__campo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
-                
-                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                
-                const unfold = (f, seed) => {
-                    const go = (f, seed, acc) => {
-                        const res = f(seed)
-                        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                    }
-                    return go(f, seed, [])
-                }</textarea>
+            <div class="editor__campo--box">
+                <textarea name="" id="" cols="30" rows="10" class="editor__campo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
+                    
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                    
+            const unfold = (f, seed) => {
+                const go = (f, seed, acc) => {
+                    const res = f(seed)
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                }
+                return go(f, seed, [])
+            }</textarea>
+                </div>
                 <button class="editor__botao botao">Visualizar com o hightlight</button>
             </section>
             <form class="projeto">
@@ -70,7 +71,7 @@
                     </select>
                     <input type="color" class="color-picker" value="#6BD1FF">
                 </fieldset>
-                <button class="projeto__botao botao">Salvar projeto</button>
+                <input type = "submit" class="projeto__botao botao" value="Salvar projeto">
             </form>
         </main>
         <script src="index.js"></script>
