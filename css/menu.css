@@ -28,12 +28,9 @@
     transition: 0.2s;
 }
 
-.menu__item:hover {
-  opacity: 72%
-}
-
-.menu__item i:hover{
-    background: var(--item-menu-hover);
+.menu__item:hover i{
+  opacity: 72%;
+  background: var(--item-menu-pressed);
 }
 
 .menu__item--ativo {
@@ -56,7 +53,7 @@
 
   .menu-mobile {
     position:absolute;
-    left: calc(100vw - 254px);
+    left: calc(100vw - 286px);
     display: flex;
     flex-direction: column;
     height: 100vh;

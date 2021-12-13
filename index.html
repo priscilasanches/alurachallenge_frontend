@@ -17,14 +17,14 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img src="img/Logo.svg" alt="Logo da Alura dev" class="cabecalho__logo">
-        <input type="text" placeholder="Busque por algo" aria-label="Busque por algo" class="cabecalho__entrada entrada">
+        <img src="img/Logo.svg" alt="Logo da Alura dev" class="cabecalho__logo" data-logo>
+        <input type="text" placeholder="Busque por algo" aria-label="Busque por algo" class="cabecalho__entrada entrada" data-campo-busca>
         <button class="perfil perfil__estilizacao">
             <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem">
             <p class="perfil__nome">Harry</p>
         </button>
         <div class="cabecalho--mobile">
-            <button class="botao-busca-mobile"><i class="fas fa-search" aria-hidden="true" title="Botão de busca"></i></button>
+            <button class="botao-busca-mobile"><i class="fas fa-search" aria-hidden="true" title="Botão de busca" data-botao-busca></i></button>
             <button class="botao-menu-mobile"><i class="fas fa-bars" aria-hidden="true" title="Botão do menu" data-botao-menu></i></button>
         </div>
     </header>
@@ -39,7 +39,7 @@
             </button>
         </nav>
         <section class="editor">
-            <div class="editor__campo--box">
+            <div class="editor__campo--box" style="background-color: #6BD1FF" data-cor-fundo-editor>
                 <textarea name="" id="" cols="30" rows="10" class="editor__campo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
                     
             const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -65,7 +65,7 @@
                         <option value="HTML">HTML</option>
                         <option value="CSS">CSS</option>
                     </select>
-                    <input type="color" aria-label="cor" class="color-picker" value="#6BD1FF">
+                    <input type="color" aria-label="cor" class="color-picker" value="#6BD1FF" data-cor-input>
                 </fieldset>
                 <input type = "submit" aria-label="Enviar" class="projeto__botao botao" value="Salvar projeto">
             </form>

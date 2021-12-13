@@ -48,7 +48,8 @@
 @media screen and (max-width: 1023px) {
     
     .cabecalho {  
-        grid-template-columns: auto 1fr auto;
+        display: flex;
+        justify-content: space-between;
     }
    
     .perfil {
@@ -56,7 +57,6 @@
     }
     
     .botao-menu-mobile {
-      justify-self: flex-end;
       display:inline; 
       cursor: pointer; 
     }
@@ -78,19 +78,17 @@
 }
 
 @media screen and (max-width:767px){
-    
-    .cabecalho--mobile {
-        grid-column: span 2;
-        justify-self: end;
-    }
-    
+  
     .cabecalho__entrada {
       display:none;
     }
-    
-    .botao-busca-mobile {
-      display: inline;
-      justify-self: flex-end;
+
+    .cabecalho--mobile {
+        display: flex;
+    }
+
+    .botao-busca-mobile{
+      display: inline-block;
       cursor: pointer;
     }
   
@@ -108,7 +106,17 @@
     .botao-busca-mobile i:active {
         background: #5081FB29;
     }
+
+    .hidden {
+        display: none;
+    }
+
+    .cabecalho__entrada--active {
+        display: flex;
+    }
 }
+
+
   
 
 
