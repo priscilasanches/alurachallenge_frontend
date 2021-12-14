@@ -3,11 +3,13 @@ const menu = document.querySelector('[data-menu-mobile]');
 
 const botaoBusca = document.querySelector('[data-botao-busca]');
 const campoBusca = document.querySelector('[data-campo-busca]');
-
 const logo = document.querySelector('[data-logo]');
 
 const corInput = document.querySelector('[data-cor-input]');
-const corEditor = document.querySelector('[data-cor-fundo-editor]');
+const boxEditor = document.querySelector('[data-box-editor]');
+
+const linguagem = document.querySelector('[data-linguagem]');
+const botaoHL = document.querySelector('[data-botao-hl]')
 
 //Menu tablet e mobile
 botaoMenu.addEventListener('click', () => {
@@ -25,8 +27,21 @@ botaoBusca.addEventListener('click', () => {
 
 //Altera cor no editor de código conforme escolha no color picker (outra opção de evento é o change, que altera a cor apenas após sair do color picker)
 corInput.addEventListener('input', () => {
-    corEditor.style.backgroundColor = corInput.value;      
+    boxEditor.style.backgroundColor = corInput.value;      
+});
+
+//Aplica hljs
+function aplicaHighlight() {
+    const codigo = boxEditor.innerText;
+    boxEditor.innerHTML = `<code contenteditable="true" class="editor__campo hljs ${linguagem.value}" aria-label="Editor de Código"></code>`;
+    boxEditor.querySelector('code').textContent = codigo;
+    hljs.highlightElement(boxEditor.querySelector('code'));
+}
+
+botaoHL.addEventListener ('click', () => {
+    aplicaHighlight();
 })
+
 
 
 

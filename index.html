@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dracula.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
@@ -39,20 +40,20 @@
             </button>
         </nav>
         <section class="editor">
-            <div class="editor__campo--box" style="background-color: #6BD1FF" data-cor-fundo-editor>
-                <textarea name="" id="" cols="30" rows="10" class="editor__campo">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) 
+            <div class="editor__campo--box" style="background-color: #6BD1FF" data-box-editor>
+                <code contenteditable="true" class="editor__campo hljs" aria-label="Editor de Código">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
                     
-            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
                     
-            const unfold = (f, seed) => {
-                const go = (f, seed, acc) => {
-                    const res = f(seed)
-                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-                }
-                return go(f, seed, [])
-            }</textarea>
-                </div>
-                <button class="editor__botao botao">Visualizar com o hightlight</button>
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+    return go(f, seed, [])
+    }</code>
+            </div>
+                <button class="editor__botao botao" data-botao-hl>Visualizar com o hightlight</button>
             </section>
             <form class="projeto">
                 <p class="titulo-sidebar">Seu projeto</p>
@@ -60,7 +61,7 @@
                 <textarea placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" class="entrada"></textarea>
                 <p class="titulo-sidebar">Personalização</p>
                 <fieldset class="personalizacao">
-                    <select class="entrada">
+                    <select class="entrada" data-linguagem>
                         <option value="JavaScript">JavaScript</option>
                         <option value="HTML">HTML</option>
                         <option value="CSS">CSS</option>
@@ -70,6 +71,7 @@
                 <input type = "submit" aria-label="Enviar" class="projeto__botao botao" value="Salvar projeto">
             </form>
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
         <script src="index.js"></script>
     </body>
     </html>
