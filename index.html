@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dracula.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/principal.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -40,7 +40,7 @@
             </button>
         </nav>
         <section class="editor">
-            <div class="editor__campo--box" style="background-color: #6BD1FF" data-box-editor>
+            <div class="editor__campo--box" data-box-editor>
                 <code contenteditable="true" class="editor__campo hljs" aria-label="Editor de Código">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
                     
 const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -51,7 +51,7 @@ const unfold = (f, seed) => {
         return res ? go(f, res[1], acc.concat([res[0]])) : acc
     }
     return go(f, seed, [])
-    }</code>
+}</code>
             </div>
                 <button class="editor__botao botao" data-botao-hl>Visualizar com o hightlight</button>
             </section>
@@ -72,6 +72,7 @@ const unfold = (f, seed) => {
             </form>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-        <script src="index.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/editor_codigo.js"></script>
     </body>
     </html>

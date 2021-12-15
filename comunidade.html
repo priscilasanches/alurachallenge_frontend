@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/comunidade.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -39,7 +40,81 @@
             </button>
         </nav>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-        <script src="index.js"></script>
+        <section class="container">
+            <ul class="lista-cartoes">
+                <li class="cartao">
+                    <div class="editor__campo--box">
+                        <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                        
+                        const unfold = (f, seed) => {
+                          const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                          }
+                          return go(f, seed, [])
+                        }</code>
+                    </div>
+                    <div class="cartao__infos">    
+                        <h2 class="cartao__titulo">Título do projeto</h2>
+                        <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
+                        <p><i class="fas fa-comment"></i>9</p>
+                        <p><i class="fas fa-heart"></i>9</p>
+                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                        <p class="perfil__nome">@ Harry</p>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="editor__campo--box">
+                        <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                        
+                        const unfold = (f, seed) => {
+                          const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                          }
+                          return go(f, seed, [])
+                        }</code>
+                    </div>
+                    <div class="cartao__infos">    
+                        <h2 class="cartao__titulo">Título do projeto</h2>
+                        <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
+                        <p><i class="fas fa-comment"></i>9</p>
+                        <p><i class="fas fa-heart"></i>9</p>
+                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                        <p class="perfil__nome">@ Harry</p>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="editor__campo--box">
+                        <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                        
+                        const unfold = (f, seed) => {
+                          const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                          }
+                          return go(f, seed, [])
+                        }</code>
+                    </div>
+                    <div class="cartao__infos">    
+                        <h2 class="cartao__titulo">Título do projeto</h2>
+                        <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
+                        <p><i class="fas fa-comment"></i>9</p>
+                        <p><i class="fas fa-heart"></i>9</p>
+                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                        <p class="perfil__nome">@ Harry</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <script src="js/script.js"></script>
+        <script src="js/comunidade.js"></script>
     </body>
     </html>

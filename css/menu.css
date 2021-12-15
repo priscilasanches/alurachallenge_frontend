@@ -3,10 +3,6 @@
     flex-direction: column;
 }
 
-/* .menu-mobile {
-  display: none;
-} */
-
 .titulo-sidebar {
     font-size: 0.8rem;
     line-height: 1.2rem;
@@ -71,5 +67,11 @@
   .perfil-mobile {
     align-self: left;
     display: flex;
+  }  
+}
+
+@media screen and (max-width: 767px) {
+  .menu-mobile {
+    left: calc(100vw - 270px);
   }  
 }
