@@ -17,10 +17,10 @@ main {
 /*Área do código*/
 .cartao {
     width: 48.8%;
-    background: #00000029;
+    background: var(--background-card);
     border-radius: 8px;
-    font-family: inherit;
- }
+    margin-bottom: 24px;
+}
 
 .lista-cartoes .cartao:nth-child(2n)  {
     margin-left: 2.4%;
@@ -29,7 +29,6 @@ main {
 .editor__campo--box {
     height: 288px;
     padding: 24px;
-    background-color: #6BD1FF
 }
 
 @media screen and (max-width: 1023px) {
@@ -72,21 +71,35 @@ main {
     margin-bottom: 0.5rem; 
 }
 
-.fas {
-    margin-right: 10px;
-}
-
-.fa-heart {
-    margin-left: 18px;
-}
-
 .cartao__descricao {
     grid-column: span 4;
     opacity: 80%;
     margin-bottom: 2rem;
 }
 
+.cartao__interacao {
+    padding: 0.62rem;
+    border-radius: 16px;
+}
+
+.cartao__interacao:hover{
+    background: var(--item-card-hover);
+}   
+
+.cartao__interacao:active{
+    background: var(--item-card-pressed);
+}   
+
+.fas {
+    margin-right: 0.62rem;
+}
+
+.cartao__interacao--amei {
+    color: #F65151;
+}
+
 .cartao__imagem-perfil {
     justify-self: right;
 }
+
 

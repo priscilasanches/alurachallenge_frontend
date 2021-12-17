@@ -20,8 +20,9 @@
   
     --perfil-hover: #FFFFFF29;
   
-    --item-card:#FFFFFF14;
-    --item-card-hover: #FFFFFF29;
+    --background-card: #00000029;
+    --item-card-hover:#FFFFFF14;
+    --item-card-pressed: #FFFFFF29;
 
     --fonte-card: 'Roboto Mono', sans-serif;
 }

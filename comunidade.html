@@ -43,7 +43,8 @@
         <section class="container">
             <ul class="lista-cartoes">
                 <li class="cartao">
-                    <div class="editor__campo--box">
+                    <!-- tirar background após implementar lógica -->
+                    <div class="editor__campo--box" style="background: #9AFF6B"> 
                         <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -59,14 +60,14 @@
                     <div class="cartao__infos">    
                         <h2 class="cartao__titulo">Título do projeto</h2>
                         <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
-                        <p><i class="fas fa-comment"></i>9</p>
-                        <p><i class="fas fa-heart"></i>9</p>
+                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                        <button class="cartao__interacao" data-amei><i class="fas fa-heart" data-coracao></i><span data-quantidade>9</span></button>
                         <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
                         <p class="perfil__nome">@ Harry</p>
                     </div>
                 </li>
                 <li class="cartao">
-                    <div class="editor__campo--box">
+                    <div class="editor__campo--box" style="background: #6B83FF">
                         <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -82,14 +83,14 @@
                     <div class="cartao__infos">    
                         <h2 class="cartao__titulo">Título do projeto</h2>
                         <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
-                        <p><i class="fas fa-comment"></i>9</p>
-                        <p><i class="fas fa-heart"></i>9</p>
+                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                        <button class="cartao__interacao" data-amei><i class="fas fa-heart" data-coracao></i><span data-quantidade>9</span></button>
                         <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
                         <p class="perfil__nome">@ Harry</p>
                     </div>
                 </li>
                 <li class="cartao">
-                    <div class="editor__campo--box">
+                    <div class="editor__campo--box" style="background: #FFC46B">
                         <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -105,8 +106,31 @@
                     <div class="cartao__infos">    
                         <h2 class="cartao__titulo">Título do projeto</h2>
                         <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
-                        <p><i class="fas fa-comment"></i>9</p>
-                        <p><i class="fas fa-heart"></i>9</p>
+                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                        <button class="cartao__interacao" data-amei><i class="fas fa-heart" data-coracao></i><span data-quantidade>9</span></button>
+                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                        <p class="perfil__nome">@ Harry</p>
+                    </div>
+                </li>
+                <li class="cartao">
+                    <div class="editor__campo--box" style="background: #FF6BCD">
+                        <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                        
+                        const unfold = (f, seed) => {
+                          const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                          }
+                          return go(f, seed, [])
+                        }</code>
+                    </div>
+                    <div class="cartao__infos">    
+                        <h2 class="cartao__titulo">Título do projeto</h2>
+                        <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
+                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                        <button class="cartao__interacao" data-amei><i class="fas fa-heart" data-coracao></i><span data-quantidade>9</span></button>
                         <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
                         <p class="perfil__nome">@ Harry</p>
                     </div>
