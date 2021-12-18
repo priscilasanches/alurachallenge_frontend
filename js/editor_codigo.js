@@ -10,6 +10,10 @@ corInput.addEventListener('input', () => {
 });
 
 //Aplica hljs
+botaoHL.addEventListener ('click', () => {
+    aplicaHighlight();
+})
+
 function aplicaHighlight() {
     const codigo = boxEditor.innerText;
     boxEditor.innerHTML = `<code contenteditable="true" class="editor__campo hljs ${linguagem.value}" aria-label="Editor de Código"></code>`;
@@ -17,6 +21,3 @@ function aplicaHighlight() {
     hljs.highlightElement(boxEditor.querySelector('code'));
 }
 
-botaoHL.addEventListener ('click', () => {
-    aplicaHighlight();
-})

@@ -1,23 +1,31 @@
-const botaoAmei = document.querySelectorAll('[data-amei]');
-const iconeAmei = document.querySelectorAll('[data-coracao');
-const quantidadeAmei = document.querySelectorAll('[data-quantidade]');
+const botaoAmei = document.querySelectorAll('[data-amei="botao"]');
+const iconeAmei = document.querySelectorAll('[data-amei="icone"]');
+const quantidadeAmei = document.querySelectorAll('[data-amei="quantidade"]');
 
-for (let i=0; i<botaoAmei.length; i++) { //percorre os cartões
+//Percorre os cartões para verificar em qual está havendo a interação do usuário
+for (let i=0; i<botaoAmei.length; i++) { 
      
     botaoAmei[i].addEventListener('click', () => { 
-        
-        const classe = iconeAmei[i].classList;
+        //pega a quantidade de "amei" daquele cartão       
         let quantidade = quantidadeAmei[i].textContent;
-        quantidade++;
-        quantidadeAmei[i].textContent = quantidade;
 
-        for (let j=0; j<classe.length;j++){ //percorre as classes do item do cartão onde está ocorrendo a interação
+        //verifica se o cartao clicado já estava marcado como "amei" (classe cartao__interacao--amei)
+        const classe = iconeAmei[i].classList;
+        for (let j=0; j<classe.length;j++){ 
             if (classe[j] == 'cartao__interacao--amei') {
-                quantidade -= 2; //antes do for há o incremento da quantidade, independente se já havia a classe avaliada, por isso tirar 2 vezes
+                //retira a classe cartao__interacao--amei
+                iconeAmei[i].classList.toggle('cartao__interacao--amei'); 
+                //diminui a quantidade (a pessoa está retirando sua curtida)
+                quantidade -= 1; 
                 quantidadeAmei[i].textContent = quantidade;
+                //sai da função puxada através do evento click
+                return;
             }
         }
-
+        
+        //caso não haja a classe "cartao__interacao--amei", a acrescenta e incrementar a quantidade de "amei"
         iconeAmei[i].classList.toggle('cartao__interacao--amei');
+        quantidade++;
+        quantidadeAmei[i].textContent = quantidade;
     })
 }
