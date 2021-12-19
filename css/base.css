@@ -96,6 +96,12 @@ body {
   scrollbar-width: thin;
 }
 
+@media screen and (min-width: 1024px) {
+  .editor__campo {
+    max-width: 47vw;  
+  }
+}
+
 code.hljs {
   padding: 2.5rem 1rem 1rem;
 }
