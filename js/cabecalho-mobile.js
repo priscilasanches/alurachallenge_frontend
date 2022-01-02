@@ -7,8 +7,8 @@ const logo = document.querySelector('[data-logo]');
 
 //Menu tablet e mobile
 botaoMenu.addEventListener('click', () => {
-    menu.classList.toggle('menu-mobile');
-    botaoMenu.classList.toggle('fa-times');
+menu.classList.toggle('menu-mobile');
+botaoMenu.classList.toggle('fa-times');
 });
 
 //Busca Mobile

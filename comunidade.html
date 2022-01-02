@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura dev | Comunidade</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/dracula.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/comunidade.css">
 </head>
 <body>
@@ -42,9 +38,9 @@
 
         <section class="container">
             <ul class="lista-cartoes">
-                <li class="cartao">
+                <li class="cartao" data-card>
                     <!-- tirar background após implementar lógica -->
-                    <div class="editor__campo--box" style="background: #9AFF6B"> 
+                    <article class="editor__campo--box" style="background: #9AFF6B"> 
                         <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -56,18 +52,20 @@
                           }
                           return go(f, seed, [])
                         }</code>
-                    </div>
-                    <div class="cartao__infos">    
+                    </article>
+                    <section class="cartao__infos">  
                         <h2 class="cartao__titulo">Título do projeto</h2>
                         <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
-                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
-                        <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
-                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
-                        <p class="perfil__nome">@ Harry</p>
-                    </div>
+                        <div class="cartao__infos--botoes hide" data-info>
+                            <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                            <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
+                            <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                            <p class="perfil__nome">@ Harry</p>
+                        </div>
+                    </section>
                 </li>
-                <li class="cartao">
-                    <div class="editor__campo--box" style="background: #6B83FF">
+                <li class="cartao" data-card>
+                    <article class="editor__campo--box" style="background: #6B83FF">
                         <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -79,18 +77,20 @@
                           }
                           return go(f, seed, [])
                         }</code>
-                    </div>
-                    <div class="cartao__infos">    
+                    </article>
+                    <section class="cartao__infos">  
                         <h2 class="cartao__titulo">Título do projeto</h2>
                         <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
-                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
-                        <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
-                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
-                        <p class="perfil__nome">@ Harry</p>
-                    </div>
+                        <div class="cartao__infos--botoes hide" data-info>
+                            <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                            <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
+                            <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                            <p class="perfil__nome">@ Harry</p>
+                        </div>
+                    </section>
                 </li>
-                <li class="cartao">
-                    <div class="editor__campo--box" style="background: #FFC46B">
+                <li class="cartao" data-card>
+                    <article class="editor__campo--box" style="background: #FFC46B">
                         <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -102,18 +102,20 @@
                           }
                           return go(f, seed, [])
                         }</code>
-                    </div>
-                    <div class="cartao__infos">    
+                    </article>
+                    <section class="cartao__infos">  
                         <h2 class="cartao__titulo">Título do projeto</h2>
                         <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
-                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
-                        <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
-                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
-                        <p class="perfil__nome">@ Harry</p>
-                    </div>
+                        <div class="cartao__infos--botoes hide" data-info>
+                            <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                            <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
+                            <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                            <p class="perfil__nome">@ Harry</p>
+                        </div>
+                    </section>
                 </li>
-                <li class="cartao">
-                    <div class="editor__campo--box" style="background: #FF6BCD">
+                <li class="cartao" data-card>
+                    <article class="editor__campo--box" style="background: #FF6BCD">
                         <code class="editor__campo hljs">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -125,15 +127,17 @@
                           }
                           return go(f, seed, [])
                         }</code>
-                    </div>
-                    <div class="cartao__infos">    
+                    </article>
+                    <section class="cartao__infos">  
                         <h2 class="cartao__titulo">Título do projeto</h2>
                         <p class="cartao__descricao">Essa é a descrição do meu projeto.</p>
-                        <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
-                        <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
-                        <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
-                        <p class="perfil__nome">@ Harry</p>
-                    </div>
+                        <div class="cartao__infos--botoes hide" data-info>
+                            <button class="cartao__interacao"><i class="fas fa-comment"></i>9</button>
+                            <button class="cartao__interacao" data-amei="botao"><i class="fas fa-heart" data-amei="icone"></i><span data-amei="quantidade">9</span></button>
+                            <img src="img/Photo@2x.png" alt="Foto do usuário" class="perfil__imagem cartao__imagem-perfil">
+                            <p class="perfil__nome">@ Harry</p>
+                        </div>
+                    </section>
                 </li>
             </ul>
         </section>
