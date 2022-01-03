@@ -1,3 +1,3 @@
-# alurachallenge_frontend
+# Editor de Códigos - Challenge Front-End Alura
 
-Para visualização do projeto, acessar https://alurachallenge-frontend.vercel.app/index.html
+Para utilizar a aplicação, clique <a href="https://alurachallenge-frontend.vercel.app/index.html">aqui</a>
