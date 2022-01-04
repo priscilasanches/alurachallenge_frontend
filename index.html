@@ -37,24 +37,14 @@
         </nav>
         <section class="editor">
             <div class="editor__campo--box" data-box-editor>
-                <code contenteditable="true" class="editor__campo hljs" aria-label="Editor de Código">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-                    
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                    
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}</code>
+                <code contenteditable="true" class="editor__campo hljs" aria-label="Editor de Código" data-codigo></code>
             </div>
                 <button class="editor__botao botao" data-botao-hl>Visualizar com o hightlight</button>
             </section>
             <form class="projeto">
                 <p class="titulo-sidebar">Seu projeto</p>
-                <input type="text" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" class="entrada">
-                <textarea placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" class="entrada"></textarea>
+                <input type="text" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto" class="entrada" data-titulo>
+                <textarea placeholder="Descrição do seu projeto" aria-label="Descrição do seu projeto" class="entrada" data-descricao></textarea>
                 <p class="titulo-sidebar">Personalização</p>
                 <fieldset class="personalizacao">
                     <select class="entrada" data-linguagem>
@@ -64,11 +54,11 @@ const unfold = (f, seed) => {
                     </select>
                     <input type="color" aria-label="cor" class="color-picker" value="#6BD1FF" data-cor-input>
                 </fieldset>
-                <input type = "submit" aria-label="Enviar" class="projeto__botao botao" value="Salvar projeto">
+                <input type = "submit" aria-label="Enviar" class="projeto__botao botao" value="Salvar projeto" data-botao-salvar>
             </form>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
         <script src="js/cabecalho-mobile.js"></script>
-        <script src="js/editor_codigo.js"></script>
+        <script src="js/editor_codigo.js" type="module"></script>
     </body>
     </html>

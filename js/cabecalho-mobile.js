@@ -3,12 +3,13 @@ const menu = document.querySelector('[data-menu-mobile]');
 
 const botaoBusca = document.querySelector('[data-botao-busca]');
 const campoBusca = document.querySelector('[data-campo-busca]');
+
 const logo = document.querySelector('[data-logo]');
 
 //Menu tablet e mobile
 botaoMenu.addEventListener('click', () => {
-menu.classList.toggle('menu-mobile');
-botaoMenu.classList.toggle('fa-times');
+    menu.classList.toggle('menu-mobile');
+    botaoMenu.classList.toggle('fa-times');
 });
 
 //Busca Mobile

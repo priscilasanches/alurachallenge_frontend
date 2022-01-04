@@ -110,5 +110,9 @@ main {
     display: none;
 }
 
+.comentarios{
+    grid-column: span 4;
+}
+
 
 
