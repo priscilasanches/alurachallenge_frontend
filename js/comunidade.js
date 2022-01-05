@@ -6,6 +6,7 @@ carregaProjetosComunidade()
 
 //Mostra e esconde área do botões de curtida e comentários dos cards da página de comunidade
 const cards = document.querySelectorAll('.cartao')
+
 cards.forEach(card => {
     const botoesSecao = card.querySelector('[data-info]')
     
