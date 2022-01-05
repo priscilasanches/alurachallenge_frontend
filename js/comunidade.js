@@ -1,6 +1,6 @@
 import { carregaProjetosComunidade } from "./carregarComunidade.js"
 // import { comentarios } from "./Comentarios.js"
-import { atualizaCurtidas } from "./Curtidas.js"
+import { atualizaCurtidas } from "./curtidas.js"
 
 carregaProjetosComunidade()
 
