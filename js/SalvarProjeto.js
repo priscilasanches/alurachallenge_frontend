@@ -1,13 +1,12 @@
 import { montaProjetoComunidade } from "./montaProjComunidade.js"
 
-const titulo = document.querySelector('[data-titulo]')
-const descricao = document.querySelector('[data-descricao]')
-const codigo = document.querySelector('[data-codigo]')
-const linguagem = document.querySelector('[data-linguagem]')
-const cor = document.querySelector('[data-cor-input]')
-const campoMensagem = document.querySelector('[data-mensagem]')
-
 const colherDados = () => {
+    const titulo = document.querySelector('[data-titulo]')
+    const descricao = document.querySelector('[data-descricao]')
+    const linguagem = document.querySelector('[data-linguagem]')
+    const cor = document.querySelector('[data-cor-input]')
+    const codigo = document.querySelector('[data-codigo]')
+
     const dados = {
         titulo: titulo.value,
         descricao: descricao.value,
@@ -21,6 +20,7 @@ const colherDados = () => {
 
 export const salvarProjeto = () => {
     const botaoSalvar = document.querySelector('[data-botao-salvar]')
+    const campoMensagem = document.querySelector('[data-mensagem]')
 
     botaoSalvar.addEventListener('click', (evento) => {
         evento.preventDefault()
@@ -48,7 +48,7 @@ export const salvarProjeto = () => {
 }
 
 const limparDadosTela = () => {
-    titulo.value = " "
-    descricao.value = " "
-    codigo.textContent = " "
+    document.querySelector('[data-titulo]').value = " "
+    document.querySelector('[data-descricao]').value = " "
+    document.querySelector('[data-codigo]').textContent = " "
 }

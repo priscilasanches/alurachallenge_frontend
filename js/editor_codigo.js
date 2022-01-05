@@ -19,7 +19,7 @@ botaoHL.addEventListener ('click', () => {
 
 export function aplicaHighlight() {
     const codigo = boxEditor.innerText
-    boxEditor.innerHTML = `<code contenteditable="true" class="editor__campo hljs ${linguagem.value}" aria-label="Editor de Código"></code>`
+    boxEditor.innerHTML = `<code contenteditable="true" class="editor__campo hljs ${linguagem.value}" aria-label="Editor de Código" data-codigo></code>`
     boxEditor.querySelector('code').textContent = codigo
     hljs.highlightElement(boxEditor.querySelector('code'))
 }

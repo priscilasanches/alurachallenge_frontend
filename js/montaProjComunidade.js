@@ -1,12 +1,12 @@
 export const montaProjetoComunidade = (dados) => {
-       
+        
     const cartao = document.createElement('li')
     cartao.classList.add('cartao')
     
     cartao.innerHTML = 
     `<a href="index.html">
-        <article class="editor__campo--box" style="background-color:${dados.cor}" data-abrirEditor>
-            <code class="editor__campo hljs">${dados.codigo}</code>
+        <article class="editor__campo--box" style="background-color:${dados.cor}" data-box-editor>
+            <code class="editor__campo hljs ${dados.linguagem}" data-code></code>
         </article>
     </a>
     <section class="cartao__infos">  
@@ -19,6 +19,9 @@ export const montaProjetoComunidade = (dados) => {
             <p class="perfil__nome">@ Harry</p>
         </div>
     </section>`
+
+    cartao.querySelector('code').textContent = dados.codigo
+    hljs.highlightElement(cartao.querySelector('code'))
 
     return cartao
 }
