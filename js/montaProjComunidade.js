@@ -1,6 +1,4 @@
-export const enviaProjetoParaComunidade = (dados) => {
-    
-    const listaCartoes = document.querySelector('.lista-cartoes')
+export const montaProjetoComunidade = (dados) => {
        
     const cartao = document.createElement('li')
     cartao.classList.add('cartao')
@@ -22,8 +20,8 @@ export const enviaProjetoParaComunidade = (dados) => {
         </div>
     </section>`
 
-    listaCartoes.appendChild(cartao)
- }
+    return cartao
+}
 
 
 

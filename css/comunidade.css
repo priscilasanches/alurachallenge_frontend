@@ -69,7 +69,7 @@ main {
 
 .cartao__descricao {
     opacity: 80%;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .cartao__infos--botoes {
