@@ -12,6 +12,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+       
 }
 
 /*Área do código*/
@@ -20,6 +21,7 @@ main {
     background: var(--background-card);
     border-radius: 8px;
     margin-bottom: 24px;
+    height: 100%; 
 }
 
 
