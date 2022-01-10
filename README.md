@@ -23,13 +23,11 @@ Este projeto foi desenvolvido com fins acadêmicos, buscando fixar conhecimentos
 <br>
 <br>
 
-### Desenvolvimento
-<br>
-
 ### Utilizando o editor
 
 Você pode testar o editor através deste <a href="https://alurachallenge-frontend.vercel.app/">link</a>. Os dados do projeto adicionados e salvos a partir da página principal da aplicação ficam salvos localmente em seu navegador, através do local Storage, e você poderá visualizá-los na página comunidade.
 <br>
+
 ### Funcionalidades em desenvolvimento
 
 <ul>
@@ -37,7 +35,6 @@ Você pode testar o editor através deste <a href="https://alurachallenge-fronte
   <li>Botão de comentários na página comunidade</li>
 </ul>
 <br>
-
 
 ### A implementar
 
