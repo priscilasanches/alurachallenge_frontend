@@ -13,7 +13,7 @@ export function atualizaCurtidas(card) {
                 iconeCurtidas.classList.remove('cartao__interacao--amei'); //retira a classe que marca o botão como curtido
                 quantidade--; //diminui a quantidade (a pessoa está retirando sua curtida)
                 campoQuantidadeCurtidas.textContent = quantidade; 
-                save()
+                saveLocalStorage()
                 return; //sai da função puxada através do evento click
             }
         }
@@ -21,11 +21,11 @@ export function atualizaCurtidas(card) {
         iconeCurtidas.classList.add('cartao__interacao--amei'); //adiciona a classe que marca o botão como curtido
         quantidade++;
         campoQuantidadeCurtidas.textContent = quantidade; //atualiza a quantidade de curtidas
-        save()
+        saveLocalStorage()
     })
 }
 
-function save() {
+function saveLocalStorage() {
     const cartoesSalvos = JSON.parse(localStorage.getItem('dados')) || []
     
     cartoesSalvos.forEach( cartao => {
