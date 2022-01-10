@@ -26,9 +26,17 @@ Este projeto foi desenvolvido com o fim de aprendizagem, buscando fixar conhecim
 ### Utilizando o editor
 
 ### Funcionalidades em desenvolvimento
-A funcionalidade do campo de busca e dos botões de comentários, na página Comunidade, encontram-se em desenvolvimento.
+<ul>
+  <li>Funcionalidade do campo de busca</li>
+  <li>Funcionalidade do botão de comentários na página comunidade</li>
+</ul>
 
-### Próximos objetivos
+### A implementar
+<ul>
+  <li>Possibilidade de edição, na página principal, dos projetos salvos na página Comunidade, através de um botão de Editar</li>
+  <li>Possibilidade de exclusão de cartões, pelo usuário, da página de comunidade</li>
+  <li>Tag da linguagem utilizada, nos projetos em Comunidade</li>
+</ul>
 
 
 
