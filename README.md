@@ -18,26 +18,34 @@
 </div>
 
 ## Sobre o projeto
-
 Este projeto foi desenvolvido com fins acadêmicos, buscando fixar conhecimentos recém-adquiridos em HTML, CSS e JavaScript, não sendo utilizado, até este momento, nenhum framework para seu desenvolvimento.
 <br>A ideia do projeto, bem como seu design, foram fornecidos pela Alura.
 <br>
 <br>
+
 ### Funcionalidades
+<br>
 
 ### Utilizando o editor
+<br>
 
 ### Funcionalidades em desenvolvimento
+
 <ul>
-  <li>Funcionalidade do campo de busca</li>
-  <li>Funcionalidade do botão de comentários na página comunidade</li>
+  <li>Campo de busca</li>
+  <li>Botão de comentários na página comunidade</li>
 </ul>
+<br>
+
 
 ### A implementar
+
 <ul>
-  <li>Possibilidade de edição, na página principal, dos projetos salvos na página Comunidade, através de um botão de Editar</li>
-  <li>Possibilidade de exclusão de cartões, pelo usuário, da página de comunidade</li>
+  <li>Botão de edição dos projetos salvos na página Comunidade, devolvendo seu conteúdo à página principal</li>
+  <li>Botão de exclusão de cartões da página de comunidade</li>
   <li>Tag da linguagem utilizada, nos projetos em Comunidade</li>
+  <li>Alteração de usuários</li>
+  <li>Viabilizar utilização por mais de um usuário</li>
 </ul>
 
 
