@@ -1,8 +1,10 @@
 <div align="center">
+  
+  <img align="center" src="img/logo.png" width="200">
 
   <h3 align="center">Alura-DEV Code Editor</h3>
 
-  <img align="center" src="img/logo.png">
+
 
   <p align="center">Editor de Código desenvolvido durante Challenge de Front-End da Alura</p>
     <br>
