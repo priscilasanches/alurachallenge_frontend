@@ -23,7 +23,7 @@ Este projeto foi desenvolvido com fins acadêmicos, buscando fixar conhecimentos
 <br>
 <br>
 
-### Funcionalidades
+### Desenvolvimento
 <br>
 
 ### Utilizando o editor
