@@ -1,4 +1,3 @@
-<br>
 <div align="center">
 
   <h3 align="center">Alura-DEV Code Editor</h3>
@@ -17,11 +16,10 @@
 
 ## Sobre o projeto
 
-
 Este projeto foi desenvolvido com o fim de aprendizagem, buscando fixar conhecimentos recém-adquiridos em HTML, CSS e JavaScript, não sendo utilizado, até este momento, nenhum framework para seu desenvolvimento.
 <br>A ideia do projeto, bem como seu design, foram fornecidos pela Alura.
 <br>
-
+<br>
 ### Funcionalidades
 
 ### Utilizando o editor
