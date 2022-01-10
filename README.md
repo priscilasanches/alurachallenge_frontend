@@ -2,8 +2,9 @@
 
   <h3 align="center">Alura-DEV Code Editor</h3>
 
-  <p align="center">
-    Editor de Código desenvolvido durante Challenge de Front-End da Alura
+  <img align="center" src="img/logo.png">
+
+  <p align="center">Editor de Código desenvolvido durante Challenge de Front-End da Alura</p>
     <br>
     <a href="https://github.com/priscilasanches/alurachallenge_frontend"><strong>Explore o projeto »</strong></a>
     <br>
