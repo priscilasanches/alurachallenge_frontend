@@ -19,7 +19,7 @@
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido com o fim de aprendizagem, buscando fixar conhecimentos recém-adquiridos em HTML, CSS e JavaScript, não sendo utilizado, até este momento, nenhum framework para seu desenvolvimento.
+Este projeto foi desenvolvido com fins acadêmicos, buscando fixar conhecimentos recém-adquiridos em HTML, CSS e JavaScript, não sendo utilizado, até este momento, nenhum framework para seu desenvolvimento.
 <br>A ideia do projeto, bem como seu design, foram fornecidos pela Alura.
 <br>
 <br>
