@@ -9,7 +9,7 @@
     <a href="https://github.com/priscilasanches/alurachallenge_frontend"><strong>Explore o projeto »</strong></a>
     <br>
     <br>
-    <a href="https://https://alurachallenge-frontend.vercel.app/">Visualizar o projeto</a>
+    <a href="https://alurachallenge-frontend.vercel.app/">Visualizar o projeto</a>
     ·
     <a href="https://github.com/priscilasanches/alurachallenge_frontend/issues">Reportar Bug</a>
 
