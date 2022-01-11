@@ -32,15 +32,14 @@ Você pode testar o editor através deste <a href="https://alurachallenge-fronte
 ### Funcionalidades em desenvolvimento
 
 <ul>
-  <li>Campo de busca</li>
   <li>Botão de comentários na página comunidade</li>
+  <li>Botão de edição dos projetos salvos na página Comunidade, devolvendo seu conteúdo à página principal</li>
 </ul>
 <br>
 
 ### A implementar
 
 <ul>
-  <li>Botão de edição dos projetos salvos na página Comunidade, devolvendo seu conteúdo à página principal</li>
   <li>Botão de exclusão de cartões da página de comunidade</li>
   <li>Tag da linguagem utilizada, nos projetos em Comunidade</li>
   <li>Alteração de usuários</li>
