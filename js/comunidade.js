@@ -1,8 +1,11 @@
+import { busca } from "./busca.js"
 import { carregaProjetosComunidade } from "./carregarComunidade.js"
 // import { comentarios } from "./Comentarios.js"
 import { atualizaCurtidas } from "./curtidas.js"
 
-carregaProjetosComunidade()
+const cartoesSalvos = JSON.parse(localStorage.getItem('dados')) || []
+
+carregaProjetosComunidade(cartoesSalvos)
 
 //Mostra e esconde área do botões de curtida e comentários dos cards da página de comunidade
 const cards = document.querySelectorAll('.cartao')
@@ -20,5 +23,8 @@ cards.forEach(card => {
     atualizaCurtidas(card)
     // comentarios(card) - implementar
 })
+
+busca()
+
 
 

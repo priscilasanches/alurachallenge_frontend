@@ -2,8 +2,7 @@ export function comentarios(card){
     const botaoComentario = card.querySelector('[data-comentario="botao"]')
     const quantidadeComentario = card.querySelector('[data-comentario="quantidade"]')
     const areaBotoes = card.querySelector('[data-info]')
-    const textoComentarios = card.querySelector('[data-comentario="texto"]')
-        
+            
     botaoComentario.addEventListener('click', () => {
         const areaComentarios = document.createElement('div')
         const conteudo = '<textarea class="entrada" data-comentario="texto"></textarea>'

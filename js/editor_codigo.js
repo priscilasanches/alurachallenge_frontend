@@ -1,5 +1,7 @@
 import { salvarProjeto } from "./salvarProjeto.js";
 
+const entrada = document.querySelector('[data-campo-busca]')
+
 const corInput = document.querySelector('[data-cor-input]')
 const boxEditor = document.querySelector('[data-box-editor]')
 
@@ -26,3 +28,6 @@ export function aplicaHighlight() {
 
 salvarProjeto()
 
+entrada.addEventListener('input', function () {
+    window.location.href = "../comunidade.html"
+})
