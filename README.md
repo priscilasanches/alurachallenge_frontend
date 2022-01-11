@@ -7,7 +7,6 @@
 
 
   <p align="center">Editor e Comunidade de trechos de códigos desenvolvido durante Challenge de Front-End da Alura</p>
-
     <a href="https://github.com/priscilasanches/alurachallenge_frontend"><strong>Explore o projeto »</strong></a>
     <br>
     <br>
