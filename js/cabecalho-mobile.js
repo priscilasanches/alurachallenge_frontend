@@ -1,10 +1,8 @@
-const botaoMenu = document.querySelector('[data-botao-menu]');
-const menu = document.querySelector('[data-menu-mobile]');
-
-const botaoBusca = document.querySelector('[data-botao-busca]');
-const campoBusca = document.querySelector('[data-campo-busca]');
-
+const botaoBusca = document.querySelector('[data-botao-busca]')
+const botaoMenu = document.querySelector('[data-botao-menu]')
+const campoBusca = document.querySelector('[data-campo-busca]')
 const logo = document.querySelector('[data-logo]');
+const menu = document.querySelector('[data-menu-mobile]')
 
 //Menu tablet e mobile
 botaoMenu.addEventListener('click', () => {
@@ -12,7 +10,7 @@ botaoMenu.addEventListener('click', () => {
     botaoMenu.classList.toggle('fa-times');
 });
 
-//Busca Mobile
+//Campo de busca Mobile
 botaoBusca.addEventListener('click', () => {
     botaoMenu.classList.toggle('hidden');
     logo.classList.toggle('hidden');

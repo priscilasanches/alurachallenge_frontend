@@ -1,30 +1,30 @@
-import { busca } from "./busca.js"
-import { carregaProjetosComunidade } from "./carregarComunidade.js"
-// import { comentarios } from "./Comentarios.js"
-import { atualizaCurtidas } from "./curtidas.js"
+import { carregaProjetosComunidade } from "./carregarComunidade.js" 
+import { busca } from "./busca.js" 
+import { atualizaCurtidas } from "./curtidas.js"//funcionalidade do botão de curtir
 
-const cartoesSalvos = JSON.parse(localStorage.getItem('dados')) || []
+const projetosSalvos = JSON.parse(localStorage.getItem('dados')) || []
 
-carregaProjetosComunidade(cartoesSalvos)
+//imprime os projetos salvos no local storage na página Comunidade
+carregaProjetosComunidade(projetosSalvos) 
 
-//Mostra e esconde área do botões de curtida e comentários dos cards da página de comunidade
-const cards = document.querySelectorAll('.cartao')
+//funcionalidade do campo de pesquisa
+busca() 
 
-cards.forEach(card => {
-    const botoesSecao = card.querySelector('[data-info]')
-    
-    card.addEventListener('mouseenter', () => {
-        botoesSecao.classList.remove('hide')
+//Mostra e esconde área do botões de curtida e comentários dos cartões dos projetos da página de comunidade
+const cartoes = document.querySelectorAll('.cartao')
+cartoes.forEach(cartao => {
+    //acessa a div, de cada cartão, que contém os botões
+    const botoesCartao = cartao.querySelector('[data-interacao]') 
+    //quando o mouse passa sobre o cartão, os botões daquele cartão aparecem
+    cartao.addEventListener('mouseenter', () => {
+        botoesCartao.classList.remove('esconder')
     })
-    card.addEventListener('mouseleave', () => {
-        botoesSecao.classList.add('hide')
+    //quando o mouse sai da área de um cartão, os botões desaaparecem
+    cartao.addEventListener('mouseleave', () => {
+        botoesCartao.classList.add('esconder')
     })
 
-    atualizaCurtidas(card)
-    // comentarios(card) - implementar
+    //funcionalidade de contagem de curtidas e armazenamento dessas informações no localStorage
+    atualizaCurtidas(cartao) 
+    // comentarios(cartao) - implementar
 })
-
-busca()
-
-
-

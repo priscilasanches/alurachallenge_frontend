@@ -1,23 +1,24 @@
-export function comentarios(card){
-    const botaoComentario = card.querySelector('[data-comentario="botao"]')
-    const quantidadeComentario = card.querySelector('[data-comentario="quantidade"]')
-    const areaBotoes = card.querySelector('[data-info]')
+//EM IMPLEMENTAÇÃO 
+//export function comentarios(card){
+//     const botaoComentario = card.querySelector('[data-comentario="botao"]')
+//     const quantidadeComentario = card.querySelector('[data-comentario="quantidade"]')
+//     const areaBotoes = card.querySelector('[data-info]')
             
-    botaoComentario.addEventListener('click', () => {
-        const areaComentarios = document.createElement('div')
-        const conteudo = '<textarea class="entrada" data-comentario="texto"></textarea>'
-        areaComentarios.classList.add('comentarios')
-        areaComentarios.innerHTML = conteudo
-        areaBotoes.appendChild(areaComentarios)
+//     botaoComentario.addEventListener('click', () => {
+//         const areaComentarios = document.createElement('div')
+//         const conteudo = '<textarea class="entrada" data-comentario="texto"></textarea>'
+//         areaComentarios.classList.add('comentarios')
+//         areaComentarios.innerHTML = conteudo
+//         areaBotoes.appendChild(areaComentarios)
 
-        //adicionar classe hide, para aparecer novamente apenas se o botão de comentários for clicado
+//         //adicionar classe hide, para aparecer novamente apenas se o botão de comentários for clicado
         
-        let quantidade = quantidadeComentario.textContent;
+//         let quantidade = quantidadeComentario.textContent;
 
-        //adicionar if para incrementar apenas se for incluído novo comentário
-        quantidade++;
-        quantidadeComentario .textContent = quantidade; //atualiza a quantidade de curtidas
-    })
-}
+//         //adicionar if para incrementar apenas se for incluído novo comentário
+//         quantidade++;
+//         quantidadeComentario .textContent = quantidade; //atualiza a quantidade de curtidas
+//     })
+// }
 
 

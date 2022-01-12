@@ -120,10 +120,13 @@ option {
 
 .projeto__mensagem {
   padding-top: 1rem;
-  color: darkred;
+  color: rgb(224, 107, 107);
+  font-weight: 600;
+  padding-top: 8px;
 }
 
 .mensagem-sucesso {
-  color: darkolivegreen;
+  color: rgb(160, 211, 72);
+  font-weight: 600;
 }
 

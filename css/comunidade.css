@@ -96,7 +96,7 @@ main {
     margin-right: 0.62rem;
 }
 
-.cartao__interacao--amei {
+.cartao__interacao--curtir {
     color: #F65151;
 }
 
@@ -108,7 +108,7 @@ main {
     padding-right: 0.5rem;
 }
 
-.hide{
+.esconder{
     display: none;
 }
 
