@@ -46,13 +46,13 @@ O campo de pesquisa realiza uma busca nos campos de título e descrição dos pr
 ### Implementações que requerem mais estudos
 
 <ul>
-  <li>Alteração de usuários</li>
-  <li>Viabilizar utilização por mais de um usuário</li>
-  <li>Botão de comentários na página comunidade</li>
-  <li>Utilizar um framework SPA para montar o editor de código</li>
   <li>Criar opção de exportar o código na extensão escolhida</li>
   <li>Exportação do código em png, svg ou jpg</li>
+  <li>Alteração de usuários</li>
+  <li>Botão de comentários na página comunidade</li>
+  <li>Utilizar um framework SPA para montar o editor de código</li>
   <li>Botão de edição dos projetos salvos na página Comunidade, devolvendo seu conteúdo à página principal</li>
+  <li>Viabilizar utilização por mais de um usuário</li>
 </ul>
 
 
