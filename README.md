@@ -38,18 +38,21 @@ O campo de pesquisa realiza uma busca nos campos de título e descrição dos pr
 ### Funcionalidades em desenvolvimento
 
 <ul>
-  <li>Botão de comentários na página comunidade</li>
+  <li>Botão de exclusão de cartões da página de comunidade</li>
+  <li>Tag da linguagem utilizada, nos projetos em Comunidade</li>
   <li>Botão de edição dos projetos salvos na página Comunidade, devolvendo seu conteúdo à página principal</li>
 </ul>
 <br>
 
-### A implementar
+### Implementações que requerem mais estudos
 
 <ul>
-  <li>Botão de exclusão de cartões da página de comunidade</li>
-  <li>Tag da linguagem utilizada, nos projetos em Comunidade</li>
   <li>Alteração de usuários</li>
   <li>Viabilizar utilização por mais de um usuário</li>
+  <li>Botão de comentários na página comunidade</li>
+  <li>Utilizar um framework SPA para montar o editor de código</li>
+  <li>Criar opção de exportar o código na extensão escolhida</li>
+  <li>Exportação do código em png, svg ou jpg</li>
 </ul>
 
 
