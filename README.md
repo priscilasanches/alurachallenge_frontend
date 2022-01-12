@@ -40,7 +40,6 @@ O campo de pesquisa realiza uma busca nos campos de título e descrição dos pr
 <ul>
   <li>Botão de exclusão de cartões da página de comunidade</li>
   <li>Tag da linguagem utilizada, nos projetos em Comunidade</li>
-  <li>Botão de edição dos projetos salvos na página Comunidade, devolvendo seu conteúdo à página principal</li>
 </ul>
 <br>
 
@@ -53,6 +52,7 @@ O campo de pesquisa realiza uma busca nos campos de título e descrição dos pr
   <li>Utilizar um framework SPA para montar o editor de código</li>
   <li>Criar opção de exportar o código na extensão escolhida</li>
   <li>Exportação do código em png, svg ou jpg</li>
+  <li>Botão de edição dos projetos salvos na página Comunidade, devolvendo seu conteúdo à página principal</li>
 </ul>
 
 
