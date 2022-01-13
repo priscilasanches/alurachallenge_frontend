@@ -10,6 +10,7 @@ export const montaProjetoComunidade = (dados) => {
     </article>
     <section class="cartao__infos">  
         <h2 class="cartao__titulo" data-titulo>${dados.infos.titulo}</h2>
+        <h3 class="cartao__linguagem">${dados.infos.linguagem}</h3>
         <p class="cartao__descricao" data-descricao>${dados.infos.descricao}</p>
         <div class="cartao__infos--botoes esconder" data-interacao>
             <button class="cartao__interacao" data-comentario="botao"><i class="fas fa-comment"></i><span data-comentario="quantidade">9</span></button>
