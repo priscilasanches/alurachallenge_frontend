@@ -57,6 +57,7 @@ body {
   outline: none;
   transition: 0.2s;
   resize: none;
+  overflow-y: hidden;
 }
 
 .entrada:hover {
@@ -97,6 +98,7 @@ body {
   box-shadow: 0px 16px 24px 0px #0000003D;
   white-space:pre-wrap;
   overflow-y: auto;
+  overflow-wrap: break-word;
   scrollbar-color: dark;
   scrollbar-width: thin;
 }

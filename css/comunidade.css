@@ -88,13 +88,19 @@ main {
 .cartao__infos--botoes {
     display: grid;
     grid-column: span 2;
-    grid-template-columns: auto auto 1fr auto;
+    grid-template-columns: auto auto 1fr auto auto;
     margin-top: 0.5rem;
+    align-items: center;
+}
+
+.numero-id {
+    display: none;
 }
 
 .cartao__interacao {
     padding: 0.62rem;
     border-radius: 16px;
+    cursor: pointer; 
 }
 
 .cartao__interacao:hover{
@@ -118,16 +124,29 @@ main {
 }
 
 .perfil__nome{
-    padding-right: 0.5rem;
+    padding-right: 1rem;
+}
+
+
+
+.far:hover{
+    color: rgba(226, 48, 48, 0.986);
 }
 
 .esconder{
     display: none;
 }
 
-.comentarios{
-    grid-column: span 4;
+.fadeOut {
+    opacity: 0;
+    transition: 0.5s;
 }
+
+/* .comentarios{
+    grid-column: span 4;
+} */
+
+
 
 
 

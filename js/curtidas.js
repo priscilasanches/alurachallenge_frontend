@@ -1,4 +1,4 @@
-//Marcação e contagem de curtidas, recebendo como parametro os dados de um cartão de projeto advindo de comunidade.js
+//Marcação e contagem de curtidas, recebendo como parametro o elemento li (cartão de projeto) advindo de comunidade.js
 export function atualizaCurtidas(cartao) {
     
     const botaoCurtidas = cartao.querySelector('[data-curtir-botao]')
@@ -34,9 +34,9 @@ export function atualizaCurtidas(cartao) {
 //atualiza no local storage a classe do icone (se está ou não curtido) e a quantidade
 function atualizaLocalStorage() {
     
-    const cartoesSalvos = JSON.parse(localStorage.getItem('dados')) || []
+    const projetosSalvos = JSON.parse(localStorage.getItem('dados')) || []
     
-    cartoesSalvos.forEach( cartao => {
+    projetosSalvos.forEach( cartao => {
         const quantidadeAtualizada = document.querySelector(`[data-curtir-quantidade="${cartao.id}"]`).textContent
         //compara a quantidade de curtidas do cartão no DOM e no LocalStorage, estando diferentes (ou seja, o usuário interagiu com aquele cartão), nega seu estado anterior no local storage (curtido: true ou false)
         if (quantidadeAtualizada != cartao.infos.quantidadeCurtidas){
@@ -45,6 +45,6 @@ function atualizaLocalStorage() {
         //atualiza a quantidade de curtidas no localStorage    
         cartao.infos.quantidadeCurtidas = quantidadeAtualizada
 
-        localStorage.setItem('dados', JSON.stringify(cartoesSalvos))
+        localStorage.setItem('dados', JSON.stringify(projetosSalvos))
     })   
 }
