@@ -3,7 +3,6 @@ const campoMensagem = document.querySelector('[data-mensagem]')
 const cor = document.querySelector('[data-cor-input]')
 const descricao = document.querySelector('[data-descricao]')
 const linguagem = document.querySelector('[data-linguagem]')
-const projetosSalvos = JSON.parse(localStorage.getItem('dados')) || [] 
 const titulo = document.querySelector('[data-titulo]')
 
 //Módulo chamado em editor_codigo.js, responsável por escutar o clique no botão salvar, criar objeto com os dados e adicionar ao Local Storage. Chama o módulo montarProjComunidade.js, para criar a estrutura do projeto que aparecerá em comunidade.
@@ -16,6 +15,7 @@ export const salvarProjeto = () => {
         //permite salvar o projeto apenas se os campos titulo e código estiverem preenchidos
         if (novoProjeto.infos.titulo && novoProjeto.infos.codigo) { 
             //adiciona os dados do novo projeto aos já salvos no local storage
+            const projetosSalvos = JSON.parse(localStorage.getItem('dados')) || [] 
             const projetosAtualizados = [...projetosSalvos, novoProjeto] 
             //atualiza o local storage com os dados do novo projeto
             localStorage.setItem('dados', JSON.stringify(projetosAtualizados)) 
