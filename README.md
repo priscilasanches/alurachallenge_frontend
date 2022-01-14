@@ -30,7 +30,7 @@ Você pode testar o editor através deste <a href="https://alurachallenge-fronte
 
 ### Funcionalidades implementadas
 Na página principal da aplicação (editor de código) é possivel adicionar um trecho de código, título, descrição e linguagem utilizada no projeto, além de ser possivel personalizá-lo através da aplicação de highlight e da escolha de uma cor de fundo. Ao clicar em salvar projeto, é dado um feedback de que o cartão foi salvo na página de comunidades. Caso o código e o título não tenham sido digitados, será dado feedback no sentido de preencher esses campos antes de salvar o projeto.<br>
-Na página comunidade, são carregados os projetos cujas informações estejam salvas no Local Storage. É possível interagir com esses cartões curtindo-os (o botão para tanto aparece ao passar o mouse sobre o cartão do projeto que se deseja interagir). A "curtida" ficará salva no local storage, podendo ser curtido uma única vez (ao clicar uma segunda vez, a curtida será desmarcada e tal opção permanecerá salva).<br>
+Na página comunidade, são carregados os projetos cujas informações estejam salvas no Local Storage. É possível interagir com esses cartões curtindo-os ou excluindo-os (o botão para tanto aparece ao passar o mouse sobre o cartão do projeto que se deseja interagir). A "curtida" ficará salva no local storage, podendo ser curtido uma única vez (ao clicar uma segunda vez, a curtida será desmarcada e tal opção permanecerá salva). Quando excluído o cartão, o Local Storage é atualizado com essa informação.<br>
 O campo de pesquisa realiza uma busca nos campos de título e descrição dos projetos da página comunidade, não sendo case-sensitive.
 <br>
 <br>
@@ -38,8 +38,7 @@ O campo de pesquisa realiza uma busca nos campos de título e descrição dos pr
 ### Funcionalidades em desenvolvimento
 
 <ul>
-  <li>Botão de exclusão de cartões da página de comunidade</li>
-  <li>Tag da linguagem utilizada, nos projetos em Comunidade</li>
+
 </ul>
 <br>
 
