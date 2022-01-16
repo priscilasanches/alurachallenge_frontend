@@ -19,4 +19,5 @@ function atualizaLocalStorage (id) {
     //exclui do Local Storage o projeto cujo id foi capturado pelo botaoExcluirProjeto
     projetosSalvos.splice(id, 1)
     localStorage.setItem('dados', JSON.stringify(projetosSalvos))
+    window.location.reload()
 }

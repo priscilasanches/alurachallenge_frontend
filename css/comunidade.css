@@ -11,8 +11,7 @@ main {
 .lista-cartoes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-       
+    gap: 2.4%;       
 }
 
 /*Área do código*/
@@ -22,11 +21,6 @@ main {
     border-radius: 8px;
     margin-bottom: 24px;
     height: 100%; 
-}
-
-
-.lista-cartoes .cartao:nth-child(2n)  {
-    margin-left: 2.4%;
 }
 
 .editor__campo--box {
